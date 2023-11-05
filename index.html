@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el numero</title>
+</head>
+<body>
+    <main class="main">
+        <section class="gameInicio">
+            <div class="inicio">
+                <p class="description">Intenta adivinar un número del 1 al 1000.<br>
+                    Primero escoje la difícultad:<br>
+                    <b>Fácil</b>: 10 intentos.<br>
+                    <b>Difícil</b>: 5 intentos.<br>
+                    <b>Imposible</b>: 3 intentos.
+                </p>
+                <button id="btn-gameStart">Jugar</button>
+            </div>
+            <form class="dificultad">
+                <input type="button" value="Fácil" class="inputDificultad">
+                <input type="button" value="Difícil" class="inputDificultad">
+                <input type="button" value="Imposible" class="inputDificultad">
+            </form>
+        </section>
+        <section class="gameContent">
+            <div class="contentNumber">
+                <div class="modal">
+                    <button class="againGame">Volver a jugar</button>
+                    <button class="changeDificultad">Cambiar dificultad</button>
+                </div>
+                <div id="divRandom"></div>
+                <div id="divCronometro">30</div>
+                <div id="divIntentos"></div>
+                <form class="formComprobarNumber">
+                    <input type="number" name="" id="numberInput">
+                    <input type="submit" value="Comprobar" id="numberBtn">
+                </form>
+            </div>
+            <p class="contentInfo">
+            </p>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
